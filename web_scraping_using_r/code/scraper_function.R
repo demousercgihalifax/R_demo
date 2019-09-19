@@ -1,3 +1,12 @@
+##############################################################
+## Project       :Demo for web_scraping_using_r
+## Script purpose:Scrape the data from Yahoo finance website
+## Date          :19-Sep-2019
+## Author        :Harsh Paikh
+## Version       :V1.0 First verion
+##############################################################
+
+
 # Step1 Install Relavent package
 # install.packages('rvest')
 # install.packages('stringr')
