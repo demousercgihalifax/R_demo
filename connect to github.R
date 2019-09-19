@@ -4,3 +4,4 @@
 # run below on terminal 
 system('git config --global user.email "demo.user.cgi.halifax@gmail.com"')
 system('git config --global user.name "demousercgihalifax"')
+system('git config remote.origin.url git@github.com:demousercgihalifax/R_demo.git')
