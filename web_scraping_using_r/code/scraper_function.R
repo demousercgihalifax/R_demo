@@ -7,7 +7,7 @@
 ##############################################################
 
 
-# Step1 Install Relavent package
+#Step1 Install Relavent package-- Neds to be executed only once per poject
 # install.packages('rvest')
 # install.packages('stringr')
 # install.packages('mailR')
