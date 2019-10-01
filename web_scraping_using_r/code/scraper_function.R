@@ -23,7 +23,7 @@ library(lubridate)
 
 
 #Creating functio 
-yahoo_fin <- function(script , country) {
+yahoo_fin <- function(script='AAPL' ,country='ca',from_email="demo.user.cgi.halifax@gmail.com",from_password="",to_email="demo.user.cgi.halifax@gmail.com") {
   #Specifying the url for desired website 
   scriptname <-  toupper(script)
   #scriptname <- 'AAPL'
@@ -126,15 +126,15 @@ yahoo_fin <- function(script , country) {
   
   
   #Sending Emial
-  send.mail(from="demo.user.cgi.halifax@gmail.com",
-            to=c("harsh.parikh@cgi.com","demo.user.cgi.halifax@gmail.com"),
+  send.mail(from=from_email,
+            to=c(to_email),
             subject=str_c("Moneycontrol webscraing for script",scriptname),
             body="PFA the desired document",
             html=T,
             smtp=list(host.name = "smtp.gmail.com",
                       port = 465,
-                      user.name = "demo.user.cgi.halifax@gmail.com",
-                      passwd = "Demouser@cgi",
+                      user.name = from_email,
+                      passwd = from_password,
                       ssl = T),
             authenticate=T,
             attach.files=str_c(path,scriptname,'.csv'))
